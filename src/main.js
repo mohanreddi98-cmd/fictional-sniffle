@@ -1,6 +1,7 @@
 (function (globalScope) {
   const canvas = document.getElementById("game-canvas");
   const scoreEl = document.getElementById("score");
+  const bestScoreEl = document.getElementById("best-score");
   const statusEl = document.getElementById("status");
   const pauseBtn = document.getElementById("pause-btn");
   const restartBtn = document.getElementById("restart-btn");
@@ -9,6 +10,7 @@
   globalScope.SnakeApp.createGameApp({
     canvas,
     scoreEl,
+    bestScoreEl,
     statusEl,
     pauseBtn,
     restartBtn,
