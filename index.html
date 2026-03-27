@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Snake</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <h1>Snake</h1>
+    <section class="hud" aria-label="Game status">
+      <p>Score: <span id="score">0</span></p>
+      <p>Status: <span id="status">Running</span></p>
+    </section>
+
+    <canvas
+      id="game-canvas"
+      width="400"
+      height="400"
+      aria-label="Snake game board"
+      role="img"
+    ></canvas>
+
+    <section class="actions" aria-label="Game actions">
+      <button id="pause-btn" type="button">Pause</button>
+      <button id="restart-btn" type="button">Restart</button>
+    </section>
+
+    <section class="touch-controls" aria-label="Directional controls">
+      <div class="touch-row">
+        <button class="dir-btn" type="button" data-dir="up">Up</button>
+      </div>
+      <div class="touch-row">
+        <button class="dir-btn" type="button" data-dir="left">Left</button>
+        <button class="dir-btn" type="button" data-dir="down">Down</button>
+        <button class="dir-btn" type="button" data-dir="right">Right</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="./src/gameLogic.js"></script>
+  <script src="./src/gameApp.js"></script>
+  <script src="./src/main.js"></script>
+</body>
+</html>

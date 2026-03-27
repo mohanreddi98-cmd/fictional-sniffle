@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #f4f4f4;
+  color: #222;
+}
+
+.game-shell {
+  width: min(92vw, 440px);
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid #d7d7d7;
+  border-radius: 8px;
+  background: #fff;
+}
+
+h1 {
+  margin: 0 0 0.75rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.hud {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.hud p {
+  margin: 0;
+}
+
+#game-canvas {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 1px solid #c9c9c9;
+  background: #fafafa;
+}
+
+.actions,
+.touch-controls {
+  margin-top: 0.75rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+button {
+  border: 1px solid #a8a8a8;
+  background: #efefef;
+  color: #222;
+  border-radius: 4px;
+  padding: 0.45rem 0.75rem;
+  font: inherit;
+}
+
+button:hover {
+  background: #e7e7e7;
+}
+
+.touch-controls {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.touch-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.dir-btn {
+  min-width: 4.2rem;
+}
