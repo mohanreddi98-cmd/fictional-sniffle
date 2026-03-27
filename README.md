@@ -33,5 +33,6 @@ Run logic tests with Node:
 
 ## Project Owner
 
-- GitHub: [@mohanreddi98-cmd](https://github.com/mohanreddi98-cmd)
+- GitHub: [@mohanreddi98](https://github.com/mohanreddi98)
 - Commit identity: MOHAN
+
