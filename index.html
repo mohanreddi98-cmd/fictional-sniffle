@@ -8,38 +8,72 @@
 </head>
 <body>
   <main class="game-shell">
-    <h1>Neon Snake</h1>
-    <p class="tagline">Arcade glow edition</p>
-    <section class="hud" aria-label="Game status">
-      <p>Score: <span id="score">0</span></p>
-      <p>Best: <span id="best-score">0</span></p>
-      <p>Status: <span id="status">Running</span></p>
-    </section>
-
-    <canvas
-      id="game-canvas"
-      width="400"
-      height="400"
-      aria-label="Snake game board"
-      role="img"
-    ></canvas>
-
-    <section class="actions" aria-label="Game actions">
-      <button id="pause-btn" type="button">Pause</button>
-      <button id="restart-btn" type="button">Restart</button>
-    </section>
-
-    <section class="touch-controls" aria-label="Directional controls">
-      <div class="touch-row">
-        <button class="dir-btn" type="button" data-dir="up">Up</button>
+    <header class="header">
+      <div>
+        <h1>Neon Snake</h1>
+        <p class="tagline">Classic gameplay, studio polish</p>
       </div>
-      <div class="touch-row">
-        <button class="dir-btn" type="button" data-dir="left">Left</button>
-        <button class="dir-btn" type="button" data-dir="down">Down</button>
-        <button class="dir-btn" type="button" data-dir="right">Right</button>
-      </div>
+      <a class="repo-link" href="https://github.com/mohanreddi98-cmd/fictional-sniffle" target="_blank" rel="noreferrer">
+        View Source
+      </a>
+    </header>
+
+    <section class="layout">
+      <section class="game-panel">
+        <section class="hud" aria-label="Game status">
+          <p><span class="label">Score</span><span id="score" class="value">0</span></p>
+          <p><span class="label">Best</span><span id="best-score" class="value">0</span></p>
+          <p><span class="label">Status</span><span id="status" class="value">Running</span></p>
+        </section>
+
+        <canvas
+          id="game-canvas"
+          width="400"
+          height="400"
+          aria-label="Snake game board"
+          role="img"
+        ></canvas>
+
+        <section class="actions" aria-label="Game actions">
+          <button id="pause-btn" type="button">Pause</button>
+          <button id="restart-btn" type="button">Restart</button>
+        </section>
+      </section>
+
+      <aside class="info-panel">
+        <section class="card">
+          <h2>Controls</h2>
+          <p><kbd>Arrow Keys</kbd> / <kbd>W A S D</kbd> move</p>
+          <p><kbd>Space</kbd> or <kbd>P</kbd> pause</p>
+          <p><kbd>R</kbd> restart</p>
+        </section>
+
+        <section class="card touch-controls" aria-label="Directional controls">
+          <h2>Touch</h2>
+          <div class="touch-row">
+            <button class="dir-btn" type="button" data-dir="up">Up</button>
+          </div>
+          <div class="touch-row">
+            <button class="dir-btn" type="button" data-dir="left">Left</button>
+            <button class="dir-btn" type="button" data-dir="down">Down</button>
+            <button class="dir-btn" type="button" data-dir="right">Right</button>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Goal</h2>
+          <p>Eat food, grow longer, and survive as long as possible without hitting walls or yourself.</p>
+        </section>
+      </aside>
     </section>
+
+    <footer class="footer">
+      Built by <strong>MOHAN</strong> · MIT Licensed
+    </footer>
   </main>
+  <div class="bg-orb orb-a"></div>
+  <div class="bg-orb orb-b"></div>
+  <div class="bg-orb orb-c"></div>
 
   <script src="./src/gameLogic.js"></script>
   <script src="./src/gameApp.js"></script>
